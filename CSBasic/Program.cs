@@ -76,6 +76,81 @@ namespace CSBasic
             Console.WriteLine("미림여자정보과학\t고");
             Console.WriteLine("미림여자정보과학고\t");
 
+            // 문자열 연결 연산자
+            // concat concatenate operator
+            // concatenation operator
+            Console.WriteLine("ABC" + "EFG");
+            Console.WriteLine('A' + 'E');   // char
+            Console.WriteLine("ABC" + 'E');
+
+            Console.WriteLine("ABC"[2]);
+            Console.WriteLine("ABC"[3]);
+
+            // bool
+            bool isPlay = true;
+            bool isDeath = false;
+
+            // comparison operator
+            Console.WriteLine(52 == 163);
+            Console.WriteLine(52 != 163);
+            Console.WriteLine(52 > 163);    // gt
+            Console.WriteLine(52 < 163);    //lt
+            Console.WriteLine(52 >= 163);
+            Console.WriteLine(52 <= 163);
+            //Console.WriteLine(52 =! 163);
+            //Console.WriteLine(52 => 163);
+            //Console.WriteLine(52 =< 163);
+
+            // Logic operator
+            Console.WriteLine(!(true));
+            Console.WriteLine( true || false);
+            Console.WriteLine( true && false);
+
+            // 단항 연산자 - unary operator
+            Console.WriteLine(!(true));
+            int i = 0;
+            i++;
+
+            // 이항 연산자 - binary operator
+            i = 1 + 2;
+
+            // 삼항 연산자 - ternary operator
+            int j;
+            //  [1] ? [2] : [3]
+            j = (i > 3) ? 0 : 1;
+
+            //  Console.WriteLine(3 < i < 8);
+            Console.WriteLine(3 < i && i < 8);
+            Console.WriteLine(3 > i || i > 8);
+            Console.WriteLine(i < 3 || 8 < i);  // 개발자가 더 알아보기 편함
+
+            int a = 2147483640;
+            int b = 100000000;
+            Console.WriteLine((long)a + b);
+
+            Console.WriteLine(int.MinValue);
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(double.MinValue);
+
+            Console.WriteLine(-int.MaxValue);
+            //Console.WriteLine(-int.MinValue);
+
+            Console.WriteLine(3L);
+            Console.WriteLine(3l);  // 대문자로 쓰는게 좋음
+
+            Console.WriteLine(3);
+            Console.WriteLine(3.0);
+            char c = 'a';
+            Console.WriteLine(c);
+
+            // sizeof(자료형)
+            Console.WriteLine("int : " + sizeof(int));
+            Console.WriteLine("int : " + sizeof(long));
+            Console.WriteLine("int : " + sizeof(float));
+            Console.WriteLine("int : " + sizeof(double));
+            Console.WriteLine("int : " + sizeof(char));
+
+            bool IsLive = true;
         }
     }
 }
