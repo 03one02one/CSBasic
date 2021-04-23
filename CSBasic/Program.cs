@@ -10,6 +10,7 @@ namespace CSBasic
     {
         // var 키워드는 지역변수로만 사용 가능.
         // var name = "김수연";
+        // var something = "blahblah";
         static void Main(string[] args)
         {
             // Keyword
@@ -185,6 +186,14 @@ namespace CSBasic
             Console.WriteLine(_double.GetType());
             Console.WriteLine(_char.GetType());
             Console.WriteLine(_string.GetType());
+
+            var somea = "박윤수 사랑해";
+            var someb = 42;
+            var somec = 3.141592;
+            Console.WriteLine(somea.GetType());
+            Console.WriteLine(someb.GetType());
+            Console.WriteLine(somec.GetType());
+
         }
     }
 }
