@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace CSBasic3
 {
@@ -42,6 +43,107 @@ namespace CSBasic3
             for(int k = intArray3.Length; k > 0; k--)
             {
                 Console.WriteLine(intArray3[k - 1]);
+            }
+
+            string[] fruits = { "사과", "배", "포도", "딸기", "바나나" };
+            foreach(var fruit in fruits)
+            {
+                Console.WriteLine(fruit);
+            }
+
+            for(i = 0; i < 10; i++)
+            {
+                for(int j = 0; j < i+1; j++)
+                {
+                    Console.Write('*');
+                }
+                Console.WriteLine();
+            }
+
+            for(i = 0; i < 10; i++)
+            {
+                for(int j = 0; j < 10-1; j++)
+                {
+                    Console.Write(' ');
+                }
+                for(int j  = 0; j < i + 1; j++)
+                {
+                    Console.Write('*');
+                }
+                Console.WriteLine();
+            }
+
+            // 대소문자 변환
+            string input3 = "Potato Tomato";
+            Console.WriteLine(input.ToUpper());
+            Console.WriteLine(input.ToLower());
+            input.ToLower(); // 헛고생
+            Console.WriteLine(input);   // 기존 그대로 출력
+
+            string foods = "감자 고구마 토마토";
+            string[] foodsArray = foods.Split(new char[] { ' ' });
+            foreach(var item in foodsArray)
+            {
+                Console.WriteLine(item);
+            }
+
+            // 환경변수의 path 텍스트 값을 가져와서 \을 \\로 치환해서 넣어준다
+            string path = "";
+            string[] paths = path.Split(new char[] { ';' });
+            foreach (var item in paths)
+            {
+                Console.WriteLine(item);
+            }
+
+            string dirtyInput = " text  um \n\t";
+            Console.WriteLine("[" + dirtyInput + "]");
+            Console.WriteLine("[" + dirtyInput.Trim() + "]");
+
+            string[] foodsArray2 = { "감자", "고구마", "토마토", "가지" };
+            Console.WriteLine(string.Join(" ", foodsArray)); // space 1개
+            Console.WriteLine(string.Join(",", foodsArray)); 
+            Console.WriteLine(string.Join(";", foodsArray)); 
+            Console.WriteLine(string.Join(" ", foodsArray)); // tab
+
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine("[     ]");
+            Thread.Sleep(1000);
+
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine("[#    ]");
+            Thread.Sleep(1000);
+
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine("[##   ]");
+            Thread.Sleep(1000);
+
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine("[###  ]");
+            Thread.Sleep(1000);
+
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine("[#### ]");
+            Thread.Sleep(1000);
+
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine("[#####]");
+            Thread.Sleep(1000);
+
+            int x = 1;
+            while( x < 50 )
+            {
+                Console.Clear();
+                Console.SetCursorPosition(x, 5);
+
+                if (x % 3 == 0)
+                    Console.WriteLine("__@");
+                else if (x % 3 == 1)
+                    Console.WriteLine("_^@");
+                else
+                    Console.WriteLine("^_@");
+
+                Thread.Sleep(1000);
+                x++;
             }
         }
     }
