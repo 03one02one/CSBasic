@@ -26,8 +26,14 @@ namespace CSBasic5
             this.name = name;
             this.price = price;
         }
+        ~Product()
+        {
+            // Console.WriteLine(this.name) + "의 소멸자 호출");
+            Console.WriteLine(this.name + "曰 나 죽네");
+        }
     }
 
+    
     class Sample
     {
         public static int value;
