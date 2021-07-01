@@ -9,7 +9,7 @@ namespace CSBasic5
     class Product
     {
         public static int counter = 0;
-        public int id;
+        public readonly int id;
         public string name;
         public int price;
 
