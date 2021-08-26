@@ -49,8 +49,10 @@ namespace Chapter6_FormPrac
         private void btnModeless_Click(object sender, EventArgs e)
         {
             Form form = new FormCustom();
+
             if (sender == btnModeless)
             {
+                form.MdiParent = this;
                 form.Show();
             }
             else if (sender == btnModal)
