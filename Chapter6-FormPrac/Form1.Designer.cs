@@ -32,6 +32,8 @@ namespace Chapter6_FormPrac
             this.btnMessageBox1 = new System.Windows.Forms.Button();
             this.btnMessageBox2 = new System.Windows.Forms.Button();
             this.btnMessageBox3 = new System.Windows.Forms.Button();
+            this.btnModeless = new System.Windows.Forms.Button();
+            this.btnModal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMessageBox1
@@ -64,11 +66,32 @@ namespace Chapter6_FormPrac
             this.btnMessageBox3.UseVisualStyleBackColor = true;
             this.btnMessageBox3.Click += new System.EventHandler(this.btnMessageBox1_Click);
             // 
+            // btnModeless
+            // 
+            this.btnModeless.Location = new System.Drawing.Point(195, 284);
+            this.btnModeless.Name = "btnModeless";
+            this.btnModeless.Size = new System.Drawing.Size(123, 35);
+            this.btnModeless.TabIndex = 3;
+            this.btnModeless.Text = "btnModeless";
+            this.btnModeless.UseVisualStyleBackColor = true;
+            this.btnModeless.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnModal
+            // 
+            this.btnModal.Location = new System.Drawing.Point(54, 284);
+            this.btnModal.Name = "btnModal";
+            this.btnModal.Size = new System.Drawing.Size(123, 35);
+            this.btnModal.TabIndex = 4;
+            this.btnModal.Text = "btnModal";
+            this.btnModal.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(453, 369);
+            this.Controls.Add(this.btnModal);
+            this.Controls.Add(this.btnModeless);
             this.Controls.Add(this.btnMessageBox3);
             this.Controls.Add(this.btnMessageBox2);
             this.Controls.Add(this.btnMessageBox1);
@@ -83,6 +106,8 @@ namespace Chapter6_FormPrac
         private System.Windows.Forms.Button btnMessageBox1;
         private System.Windows.Forms.Button btnMessageBox2;
         private System.Windows.Forms.Button btnMessageBox3;
+        private System.Windows.Forms.Button btnModeless;
+        private System.Windows.Forms.Button btnModal;
     }
 }
 
